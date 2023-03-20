@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Divide</title>
+    <script>
+
+        function check(){
+            var a = parseInt(document.getElementById('data').value);
+            var b = parseInt(document.getElementById('data1').value);
+            var c = a/b;
+            document.getElementById('answer').value = c;
+        }
+
+    </script>
+
+
+
+</head>
+<body>
+    <input type="text" id="data">
+    <input type="text" id="data1">
+    <button onclick="check()">Check</button>
+    <input type="text" id="answer">
+</body>
+</html>

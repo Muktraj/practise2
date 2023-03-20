@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bulma/0.9.4/css/bulma.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.3.0/css/all.min.css">
+
+    <title>Calculator</title>
+
+        <script>
+            function add(){
+                var a = parseInt(document.getElementById('data').value);
+                var b = parseInt(document.getElementById('data1').value);
+                var c = a + b;
+                document.getElementById('answer').value = c;
+                }
+
+                function sub(){
+                    var a = parseInt(document.getElementById('data').value);
+                    var b = parseInt(document.getElementById('data1').value);
+                    var c = a-b;
+                    document.getElementById('answer').value = c;
+                }
+
+                function mul(){
+                    var a = parseInt(document.getElementById('data').value);
+                    var b = parseInt(document.getElementById('data1').value);
+                    var c = a*b;
+                    document.getElementById('answer').value = c;
+                }
+
+                function div(){
+                    var a = parseInt(document.getElementById('data').value);
+                    var b = parseInt(document.getElementById('data1').value);
+                    var c = a/b;
+                    document.getElementById('answer').value = c;
+                }
+
+
+
+        </script>
+
+
+
+
+
+</head>
+<body>
+    
+    
+
+    <div class="section">
+        <div class="container">
+            <input type="text" id="data" placeholder="Enter Value">
+            <input type="text" id="data1" placeholder="Enter Value">
+            <button class="btn btn-primary" onclick="add()">+</button>
+            <button class="btn btn-primary"  onclick="sub()">-</button>
+            <button class="btn btn-primary" onclick="mul()">*</button>
+            <button class="btn btn-primary" onclick="div()">/</button>
+            <input type="text" id="answer">
+        </div>
+    </div>
+
+</body>
+</html>
